@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GoogleForm</string>
+    <string name="CreateText">Create your Google Account</string>
+    <string name="inputFirstNum">First name</string>
+    <string name="inputLastNum">Last name</string>
+
+
+</resources>
