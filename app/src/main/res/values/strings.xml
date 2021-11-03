@@ -8,6 +8,12 @@
     <string name="inputPass">Password</string>
     <string name="confirmPass">Confirm</string>
     <string name="hintPass">Use 8 or more characters with a mix of letters, number and symbols</string>
+    <string name="showPass">Show Password</string>
+    <string name="nextButton">Next</string>
+    <string name="hintSignIn">Sign in instead</string>
+    <string name="hintCurrentEmail">Use my current email address instead</string>
+
+
 
 
 
