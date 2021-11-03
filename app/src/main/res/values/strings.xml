@@ -3,7 +3,7 @@
     <string name="CreateText">Create your Google Account</string>
     <string name="inputFirstNum">First name</string>
     <string name="inputLastNum">Last name</string>
-    <string name="username">Username</string>
+    <string name="username">Username@gmail.com</string>
     <string name="hintUsername">You can use letters, numbers and periods</string>
     <string name="inputPass">Password</string>
     <string name="confirmPass">Confirm</string>

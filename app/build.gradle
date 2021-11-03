@@ -6,6 +6,11 @@ plugins {
 android {
     compileSdk 31
 
+// here add buildFeatures to link XML with temp.
+    buildFeatures {
+        viewBinding true
+    } // end buildFeatures
+
     defaultConfig {
         applicationId "com.example.googleform"
         minSdk 21

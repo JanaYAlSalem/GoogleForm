@@ -10,10 +10,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputFirstNum"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="168dp"
-        android:layout_height="44dp"
+        android:layout_width="169dp"
+        android:layout_height="64dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CreateText"
         tools:ignore="SpeakableTextPresentCheck">
@@ -21,17 +21,17 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputFirstNumX"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="54dp"
             android:hint="@string/inputFirstNum" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLastNum"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="168dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="176dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toEndOf="@+id/inputFirstNum"
         app:layout_constraintTop_toBottomOf="@+id/CreateText"
         tools:ignore="SpeakableTextPresentCheck">
@@ -39,7 +39,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputLastNumX"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="52dp"
             android:hint="@string/inputLastNum" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,29 +48,29 @@
         android:layout_width="167dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/google" />
+
 
     <TextView
         android:id="@+id/CreateText"
         android:layout_width="352dp"
         android:layout_height="43dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         android:text="@string/CreateText"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="365dp"
-        android:layout_height="46dp"
+        android:layout_width="372dp"
+        android:layout_height="62dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="120dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,16 +81,19 @@
             android:id="@+id/usernameX"
             android:layout_width="match_parent"
             android:layout_height="54dp"
-            android:hint="@string/username" />
+            android:hint="@string/username"
+            android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <TextView
         android:id="@+id/hintUsername"
         android:layout_width="330dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/hintUsername"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
@@ -98,9 +101,9 @@
         android:id="@+id/inputPass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="168dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hintUsername"
         tools:ignore="SpeakableTextPresentCheck">
@@ -108,21 +111,20 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputPassX"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="60dp"
             android:hint="@string/inputPass"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confirmPass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="168dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="37dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/inputPass"
         app:layout_constraintTop_toBottomOf="@+id/hintUsername"
         tools:ignore="SpeakableTextPresentCheck">
@@ -130,18 +132,19 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/confirmPassX"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="60dp"
             android:hint="@string/confirmPass"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/hintPass"
-        android:layout_width="331dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="357dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:text="@string/hintPass"
+        android:textSize="11sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputPass" />
 
@@ -149,8 +152,8 @@
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="40dp"
         android:text="@string/nextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hintPass" />
@@ -158,7 +161,7 @@
     <CheckBox
         android:id="@+id/showPass"
         android:layout_width="191dp"
-        android:layout_height="59dp"
+        android:layout_height="51dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="@string/showPass"
@@ -169,8 +172,8 @@
         android:id="@+id/signIn"
         android:layout_width="172dp"
         android:layout_height="29dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
         android:text="@string/hintSignIn"
         android:textColor="#0586ED"
         app:layout_constraintStart_toStartOf="parent"
@@ -181,7 +184,7 @@
         android:layout_width="240dp"
         android:layout_height="22dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="@string/hintCurrentEmail"
         android:textColor="#0586ED"
         app:layout_constraintStart_toStartOf="parent"
