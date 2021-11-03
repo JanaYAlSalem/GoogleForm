@@ -3,6 +3,12 @@
     <string name="CreateText">Create your Google Account</string>
     <string name="inputFirstNum">First name</string>
     <string name="inputLastNum">Last name</string>
+    <string name="username">Username</string>
+    <string name="hintUsername">You can use letters, numbers and periods</string>
+    <string name="inputPass">Password</string>
+    <string name="confirmPass">Confirm</string>
+    <string name="hintPass">Use 8 or more characters with a mix of letters, number and symbols</string>
+
 
 
 </resources>
