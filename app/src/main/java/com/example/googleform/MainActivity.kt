@@ -3,10 +3,11 @@ package com.example.googleform
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.widget.Toast
 import com.example.googleform.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
-
 
 class MainActivity : AppCompatActivity() {
     lateinit var LinkXML: ActivityMainBinding // to initializes LinkXML in future time
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(LinkXML.root) // get root of XML
 
         LinkXML.nextButton.setOnClickListener { Next() } // call fun on button
-
+        LinkXML.showPass.setOnClickListener {  ShowPass () } // call fun on CheckBox
     }
 
 
@@ -57,6 +58,26 @@ class MainActivity : AppCompatActivity() {
     private fun IsNullInfo() {
         Snackbar.make( findViewById(R.id.googleForm), "Sorry some info is empty", Snackbar.LENGTH_SHORT).show()
     }  // end Is Null Info
+
+
+/**
+  *  To show the password, set inputPass1,inputPass2.transformationMethod = PasswordTransformationMethod.getInstance().
+  * To hide the password, set pwd.transformationMethod = HideReturnsTransformationMethod.getInstance()
+  */
+
+    fun ShowPass () {
+        val inputPass1 = LinkXML.inputPassX.text.toString()
+        val inputPass2 = LinkXML.confirmPassX.text.toString()
+
+
+        if(LinkXML.showPass.isChecked == true){
+        //    inputPass1.transformationMethod = HideReturnsTransformationMethod.getInstance()
+         //   inputPass2.transformationMethod = HideReturnsTransformationMethod.getInstance()
+        } else{
+        //    inputPass1.transformationMethod = PasswordTransformationMethod.getInstance()
+        //    inputPass1.transformationMethod = PasswordTransformationMethod.getInstance()
+        } // end else
+    } // end fun ShowPass ()
 
 } // Class
 
